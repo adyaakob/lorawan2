@@ -2400,118 +2400,121 @@
         <section id="appendices" class="content-section">
             <div class="section-header">
                 <h2>16. Appendices</h2>
-                <p class="section-purpose">Supporting documentation, technical specifications, and reference materials for the LoRaWAN tracking system implementation.</p>
             </div>
+
             <div class="row">
-                <div class="col-12">
-                    <div class="appendix-section">
-                        <h3>Appendix A: Technical Specifications</h3>
-                        <div class="specs-details mb-4">
-                            <h4>A.1 LoRaWAN Device Specifications</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Parameter</th>
-                                            <th>Specification</th>
-                                            <th>Notes</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Frequency Band</td>
-                                            <td>AS923-1</td>
-                                            <td>Malaysia ISM band</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Transmission Power</td>
-                                            <td>14 dBm</td>
-                                            <td>Configurable based on range</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Receiver Sensitivity</td>
-                                            <td>-140 dBm</td>
-                                            <td>At SF12</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                <div class="col-md-4">
+                    <div class="key-highlights">
+                        <h3>Key Contents</h3>
+                        <ul>
+                            <li>Technical Specifications</li>
+                            <li>Coverage Maps</li>
+                            <li>Power Calculations</li>
+                            <li>Team Qualifications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="detail-discussion">
+                        <div class="appendix-section">
+                            <h3>A. Technical Specifications</h3>
+                            
+                            <div class="specs-details mb-4">
+                                <h4>End Node Specifications (HKT GT-100)</h4>
+                                <ul>
+                                    <li>Model: HKT GT-100 Waterproof GPS LoRa Tracker</li>
+                                    <li>Dimensions: 100×33×20mm</li>
+                                    <li>Weight: 80g (including battery)</li>
+                                    <li>GPS Module: High sensitivity (-148dB)</li>
+                                    <li>LoRa Protocol: Standard LoRaWAN Class A</li>
+                                    <li>Battery Type: Rechargeable Li-ion, 1000mAh</li>
+                                    <li>Operating Current:
+                                        <ul>
+                                            <li>Sleep mode: <10μA</li>
+                                            <li>Active mode: <20mA</li>
+                                        </ul>
+                                    </li>
+                                    <li>Battery Life: 2-3 years with typical usage</li>
+                                    <li>Operating Temperature: -20°C to +65°C</li>
+                                </ul>
+
+                                <h4>Gateway Specifications (Milesight SG50)</h4>
+                                <ul>
+                                    <li>Battery: Built-in rechargeable 25Ah battery</li>
+                                    <li>Solar Panel: 30W (upgradeable to 45W)</li>
+                                    <li>Operating Temperature: -30°C to +70°C</li>
+                                    <li>Enclosure Rating: IP67 rated</li>
+                                    <li>Capacity: Supports up to 2000 end-nodes</li>
+                                    <li>Coverage Range: Up to 15km in rural areas</li>
+                                    <li>Power Consumption: 0.8W typical</li>
+                                    <li>LoRa Receiver: 8-channel</li>
+                                </ul>
+
+                                <h4>Optional VSAT Specifications (Hughes 9502)</h4>
+                                <ul>
+                                    <li>Type: IP-based VSAT solution</li>
+                                    <li>Data Rates: Up to 448 kbps standard IP</li>
+                                    <li>Power Consumption: <20W transmit, <1.5W idle</li>
+                                    <li>Operating Temperature: -40°C to +75°C</li>
+                                    <li>Additional Power Requirements:
+                                        <ul>
+                                            <li>100W solar panel</li>
+                                            <li>100Ah battery backup</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
 
-                        <h3>Appendix B: Compliance Documentation</h3>
-                        <div class="compliance-docs mb-4">
-                            <ul>
-                                <li><strong>MCMC Certification:</strong> Malaysian Communications and Multimedia Commission approval for wireless devices</li>
-                                <li><strong>IP67 Certification:</strong> Environmental protection standards for outdoor equipment</li>
-                                <li><strong>Safety Standards:</strong> Compliance with Malaysian occupational safety requirements</li>
-                            </ul>
-                        </div>
-
-                        <h3>Appendix C: Maintenance Procedures</h3>
-                        <div class="maintenance-procedures mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4>C.1 Routine Maintenance Schedule</h4>
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Component</th>
-                                                <th>Frequency</th>
-                                                <th>Tasks</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Solar Panels</td>
-                                                <td>Monthly</td>
-                                                <td>Clean panels, check mounting, verify output</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Batteries</td>
-                                                <td>Quarterly</td>
-                                                <td>Check voltage, clean terminals, verify charging</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gateway Hardware</td>
-                                                <td>Semi-annually</td>
-                                                <td>Firmware updates, physical inspection</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                            <h3>B. Coverage Maps</h3>
+                            <div class="coverage-maps mb-4">
+                                <p>The coverage map includes the following elements:</p>
+                                <ul>
+                                    <li>Gateway locations across 300 hectares</li>
+                                    <li>Predicted signal strength zones</li>
+                                    <li>Overlapping coverage areas</li>
+                                    <li>Terrain impact on coverage</li>
+                                    <li>Dense canopy areas</li>
+                                    <li>Gateway redundancy zones</li>
+                                    <li>VSAT connectivity points</li>
+                                </ul>
+                                <p>[Coverage map will be inserted here]</p>
                             </div>
-                        </div>
 
-                        <h3>Appendix D: Troubleshooting Guide</h3>
-                        <div class="troubleshooting-guide mb-4">
-                            <div class="accordion" id="troubleshootingAccordion">
-                                <div class="accordion-item">
-                                    <h4 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                            D.1 Common Issues and Solutions
-                                        </button>
-                                    </h4>
-                                    <div id="collapseOne" class="accordion-collapse collapse show">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li><strong>Device Not Reporting:</strong> Check battery, verify network coverage, reset device</li>
-                                                <li><strong>Poor GPS Accuracy:</strong> Verify antenna placement, check for interference</li>
-                                                <li><strong>Gateway Offline:</strong> Check power supply, network connectivity, restart system</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <h3>C. Power Calculations</h3>
+                            <div class="power-calcs mb-4">
+                                <h4>Gateway Power Requirements</h4>
+                                <p>Daily Power Consumption (SG50):</p>
+                                <p>0.8W × 24 hours = 19.2Wh/day</p>
+
+                                <p>Solar Panel Output:</p>
+                                <p>30W × 5 hours peak sun = 150Wh/day</p>
+
+                                <p>Battery Backup:</p>
+                                <p>25Ah × 12V = 300Wh (4 days backup)</p>
+
+                                <h4>VSAT Power Requirements (Optional)</h4>
+                                <p>VSAT Daily Consumption:</p>
+                                <p>(20W × 4h) + (1.5W × 20h) = 110Wh/day</p>
+
+                                <p>Combined Daily Load:</p>
+                                <p>19.2Wh + 110Wh = 129.2Wh/day</p>
+
+                                <p>Required Solar Panel: 100W minimum</p>
+                                <p>Additional Battery: 100Ah for VSAT operation</p>
                             </div>
-                        </div>
 
-                        <h3>Appendix E: Reference Documents</h3>
-                        <div class="reference-docs mb-4">
-                            <ul>
-                                <li>LoRaWAN Regional Parameters RP2-1.0.1</li>
-                                <li>ChirpStack Network Server Documentation</li>
-                                <li>Malaysian Wireless Device Regulations</li>
-                                <li>Solar Power System Design Guidelines</li>
-                            </ul>
+                            <h3>D. Team Qualifications</h3>
+                            <div class="team-quals mb-4">
+                                <ul>
+                                    <li>Project Manager: 10+ years product development and system deployments</li>
+                                    <li>RF Engineers: Experienced LoRaWAN specialists</li>
+                                    <li>System Architects: Experience in large-scale IoT implementations</li>
+                                    <li>Field Technicians: Trained in tropical environment installations</li>
+                                    <li>VSAT Installation Specialists: Certified for satellite system deployment</li>
+                                    <li>Support Team: 24/7 monitoring and maintenance capability</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
