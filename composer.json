@@ -1,0 +1,10 @@
+{
+    "name": "your-vendor/your-project",
+    "require": {},
+    "config": {
+        "user-agent": "My-Application/1.0"
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000"
+    }
+} 

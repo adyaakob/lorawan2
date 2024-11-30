@@ -1,0 +1,63 @@
+.cost-charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.chart-wrapper {
+    flex: 1 1 400px;
+    max-width: 100%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cost-tree {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cost-tree ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.cost-tree li {
+    position: relative;
+    padding: 10px 0;
+}
+
+.cost-tree li::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    background: #4e73df;
+}
+
+.cost-tree li:first-child::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background: #4e73df;
+}
+
+.cost-tree li:last-child::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 50%;
+    height: 50%;
+    width: 2px;
+    background: #4e73df;
+}

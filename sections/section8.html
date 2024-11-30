@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 8: Appendices</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <section id="section8">
+        <h2>A. Technical Specifications</h2>
+
+        <h3>End Node Specifications (HKT GT-100)</h3>
+        <ul>
+            <li><strong>Model:</strong> HKT GT-100 Waterproof GPS LoRa Tracker</li>
+            <li><strong>Dimensions:</strong> 100×33×20mm</li>
+            <li><strong>Weight:</strong> 80g (including battery)</li>
+            <li><strong>GPS Module:</strong> High sensitivity (-148dB)</li>
+            <li><strong>LoRa Protocol:</strong> Standard LoRaWAN Class A</li>
+            <li><strong>Battery Type:</strong> Rechargeable Li-ion, 1000mAh</li>
+            <li><strong>Operating Current:</strong>
+                <ul>
+                    <li>Sleep mode: &lt;10μA</li>
+                    <li>Active mode: &lt;20mA</li>
+                </ul>
+            </li>
+            <li><strong>Battery Life:</strong> 2-3 years with typical usage</li>
+            <li><strong>Operating Temperature:</strong> -20°C to +65°C</li>
+        </ul>
+
+        <h3>Gateway Specifications (Milesight SG50)</h3>
+        <ul>
+            <li><strong>Battery:</strong> Built-in rechargeable 25Ah battery</li>
+            <li><strong>Solar Panel:</strong> 30W (upgradeable to 45W)</li>
+            <li><strong>Operating Temperature:</strong> -30°C to +70°C</li>
+            <li><strong>Enclosure Rating:</strong> IP67 rated</li>
+            <li><strong>Capacity:</strong> Supports up to 2000 end-nodes</li>
+            <li><strong>Coverage Range:</strong> Up to 15km in rural areas</li>
+            <li><strong>Power Consumption:</strong> 0.8W typical</li>
+            <li><strong>LoRa Receiver:</strong> 8-channel</li>
+        </ul>
+
+        <h3>Optional VSAT Specifications (Hughes 9502)</h3>
+        <ul>
+            <li><strong>Type:</strong> IP-based VSAT solution</li>
+            <li><strong>Data Rates:</strong> Up to 448 kbps standard IP</li>
+            <li><strong>Power Consumption:</strong> &lt;20W transmit, &lt;1.5W idle</li>
+            <li><strong>Operating Temperature:</strong> -40°C to +75°C</li>
+            <li><strong>Additional Power Requirements:</strong>
+                <ul>
+                    <li>100W solar panel</li>
+                    <li>100Ah battery backup</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>B. Coverage Maps</h2>
+        <p>The coverage map includes the following elements:</p>
+        <ul>
+            <li>Gateway locations across 300 hectares</li>
+            <li>Predicted signal strength zones</li>
+            <li>Overlapping coverage areas</li>
+            <li>Terrain impact on coverage</li>
+            <li>Dense canopy areas</li>
+            <li>Gateway redundancy zones</li>
+            <li>VSAT connectivity points</li>
+        </ul>
+        <div class="map-placeholder">
+            [Coverage map will be inserted here]
+        </div>
+
+        <h2>C. Power Calculations</h2>
+        
+        <h3>Gateway Power Requirements</h3>
+        <div class="calculations">
+            <p><strong>Daily Power Consumption (SG50):</strong><br>
+            0.8W × 24 hours = 19.2Wh/day</p>
+            
+            <p><strong>Solar Panel Output:</strong><br>
+            30W × 5 hours peak sun = 150Wh/day</p>
+            
+            <p><strong>Battery Backup:</strong><br>
+            25Ah × 12V = 300Wh (4 days backup)</p>
+        </div>
+
+        <h3>VSAT Power Requirements (Optional)</h3>
+        <div class="calculations">
+            <p><strong>VSAT Daily Consumption:</strong><br>
+            (20W × 4h) + (1.5W × 20h) = 110Wh/day</p>
+            
+            <p><strong>Combined Daily Load:</strong><br>
+            19.2Wh + 110Wh = 129.2Wh/day</p>
+            
+            <p><strong>Required Solar Panel:</strong> 100W minimum</p>
+            <p><strong>Additional Battery:</strong> 100Ah for VSAT operation</p>
+        </div>
+
+        <h2>D. Team Qualifications</h2>
+        <ul>
+            <li><strong>Project Manager:</strong> 10+ years product development and system deployments</li>
+            <li><strong>RF Engineers:</strong> Experienced LoRaWAN specialists</li>
+            <li><strong>System Architects:</strong> Experience in large-scale IoT implementations</li>
+            <li><strong>Field Technicians:</strong> Trained in tropical environment installations</li>
+            <li><strong>VSAT Installation Specialists:</strong> Certified for satellite system deployment</li>
+            <li><strong>Support Team:</strong> 24/7 monitoring and maintenance capability</li>
+        </ul>
+    </section>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

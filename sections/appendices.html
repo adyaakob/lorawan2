@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendices</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section id="appendices">
+        <h2>Section 8: Appendices</h2>
+
+        <div class="appendix-section">
+            <h3>A. Technical Specifications</h3>
+            
+            <div class="specs-container">
+                <div class="spec-group">
+                    <h4>End Node Specifications</h4>
+                    <table class="specs-table">
+                        <tr>
+                            <td>GPS Module Sensitivity</td>
+                            <td>-148dB</td>
+                        </tr>
+                        <tr>
+                            <td>LoRa RF Output Power</td>
+                            <td>+14 dBm</td>
+                        </tr>
+                        <tr>
+                            <td>Operating Frequency</td>
+                            <td>915 MHz (Malaysia ISM Band)</td>
+                        </tr>
+                        <tr>
+                            <td>Battery Type</td>
+                            <td>LiFePO4, 3.2V</td>
+                        </tr>
+                        <tr>
+                            <td>Operating Temperature</td>
+                            <td>-20°C to +65°C</td>
+                        </tr>
+                        <tr>
+                            <td>IP Rating</td>
+                            <td>IP67 for tropical conditions</td>
+                        </tr>
+                        <tr>
+                            <td>Device Dimensions</td>
+                            <td>80mm × 50mm × 20mm</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>80g including battery</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-group">
+                    <h4>Gateway Specifications</h4>
+                    <table class="specs-table">
+                        <tr>
+                            <td>LoRa Concentrator</td>
+                            <td>8 channels</td>
+                        </tr>
+                        <tr>
+                            <td>RF Output Power</td>
+                            <td>+27 dBm</td>
+                        </tr>
+                        <tr>
+                            <td>Receiver Sensitivity</td>
+                            <td>-140 dBm</td>
+                        </tr>
+                        <tr>
+                            <td>Coverage Range</td>
+                            <td>Up to 15km line of sight</td>
+                        </tr>
+                        <tr>
+                            <td>Power Consumption</td>
+                            <td>6W typical</td>
+                        </tr>
+                        <tr>
+                            <td>Operating Temperature</td>
+                            <td>-40°C to +85°C</td>
+                        </tr>
+                        <tr>
+                            <td>IP Rating</td>
+                            <td>IP67</td>
+                        </tr>
+                        <tr>
+                            <td>Ethernet Interface</td>
+                            <td>10/100 BaseT</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="appendix-section">
+            <h3>B. Coverage Maps</h3>
+            <div class="coverage-map">
+                <img src="../images/coverage-map.svg" alt="Coverage Map" class="img-fluid">
+                <div class="map-legend">
+                    <ul>
+                        <li>Gateway locations across 300 hectares</li>
+                        <li>Predicted signal strength zones</li>
+                        <li>Overlapping coverage areas</li>
+                        <li>Terrain impact on coverage</li>
+                        <li>Dense canopy areas</li>
+                        <li>Gateway redundancy zones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="appendix-section">
+            <h3>C. Power Calculations</h3>
+            
+            <div class="power-calcs">
+                <div class="calc-group">
+                    <h4>Gateway Power Requirements</h4>
+                    <div class="calculation">
+                        <p>Daily Power Consumption = 6W × 24 hours = 144Wh/day</p>
+                        <p>Solar Panel Sizing = 144Wh × 1.3 (safety factor) = 187.2Wh</p>
+                        <p>Required Panel Rating = 187.2Wh ÷ 5 hours peak sun = 37.44W</p>
+                        <p>Selected Panel Size = 100W for redundancy</p>
+                    </div>
+                </div>
+
+                <div class="calc-group">
+                    <h4>Battery Capacity Calculations</h4>
+                    <div class="calculation">
+                        <p>Required Capacity = (144Wh × 7 days) ÷ (24V × 0.8 DoD)</p>
+                        <p>Minimum Capacity = 52.5Ah</p>
+                        <p>Selected Battery = 100Ah for redundancy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="appendix-section">
+            <h3>D. Team Qualifications</h3>
+            <div class="team-quals">
+                <ul>
+                    <li><strong>Project Manager:</strong> PMP certified, 10+ years in IoT deployments</li>
+                    <li><strong>RF Engineers:</strong> Certified LoRaWAN specialists</li>
+                    <li><strong>System Architects:</strong> Experience in large-scale IoT implementations</li>
+                    <li><strong>Field Technicians:</strong> Trained in tropical environment installations</li>
+                    <li><strong>Support Team:</strong> 24/7 monitoring and maintenance capability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

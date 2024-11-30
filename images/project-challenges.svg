@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Environmental Circle -->
+    <circle cx="200" cy="200" r="120" fill="#E3F2FD" opacity="0.8"/>
+    <text x="200" y="180" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Environmental</text>
+    <text x="200" y="205" text-anchor="middle" font-family="Arial" font-size="16">Dense Canopy</text>
+    <text x="200" y="230" text-anchor="middle" font-family="Arial" font-size="16">Remote Location</text>
+
+    <!-- Technical Circle -->
+    <circle cx="450" cy="200" r="120" fill="#FFE0E0" opacity="0.8"/>
+    <text x="450" y="180" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Technical</text>
+    <text x="450" y="205" text-anchor="middle" font-family="Arial" font-size="16">Power Limitations</text>
+    <text x="450" y="230" text-anchor="middle" font-family="Arial" font-size="16">Coverage Needs</text>
+
+    <!-- Operational Circle -->
+    <circle cx="700" cy="200" r="120" fill="#E8F5E9" opacity="0.8"/>
+    <text x="700" y="180" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Operational</text>
+    <text x="700" y="205" text-anchor="middle" font-family="Arial" font-size="16">3,000 Workers</text>
+    <text x="700" y="230" text-anchor="middle" font-family="Arial" font-size="16">300 Hectares</text>
+</svg>
