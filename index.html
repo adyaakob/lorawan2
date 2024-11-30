@@ -1174,9 +1174,111 @@
         <section id="network-integration" class="content-section">
             <div class="section-header">
                 <h2>7. Network and Application Server Integration</h2>
-                <p class="section-purpose">This section details the integration requirements and architecture between the LoRaWAN network components and application servers, ensuring seamless data flow and system interoperability.</p>
+                <p class="section-purpose">This section details the integration architecture between LoRaWAN network components and application servers, ensuring seamless data flow and system interoperability.</p>
             </div>
-            <div id="network-integration-content"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="key-highlights">
+                        <h3>Integration Features</h3>
+                        <ul>
+                            <li>Secure API endpoints</li>
+                            <li>Real-time data processing</li>
+                            <li>Redundant connectivity</li>
+                            <li>Data encryption</li>
+                            <li>Scalable architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="detail-discussion">
+                        <div class="integration-section">
+                            <h3>7.1 Network Server Architecture</h3>
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h4>Core Components</h4>
+                                    <ul>
+                                        <li><strong>ChirpStack Network Server:</strong> Manages LoRaWAN network protocol, device sessions, and gateway coordination</li>
+                                        <li><strong>Gateway Bridge:</strong> Handles communication between LoRa gateways and network server</li>
+                                        <li><strong>Application Server:</strong> Manages device inventory, integration, and API endpoints</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3>7.2 Data Integration Protocols</h3>
+                            <div class="integration-protocols mb-4">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Protocol</th>
+                                                <th>Purpose</th>
+                                                <th>Security</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MQTT</td>
+                                                <td>Real-time device data streaming</td>
+                                                <td>TLS 1.3, Client Certificates</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HTTP/REST</td>
+                                                <td>Configuration and management API</td>
+                                                <td>JWT, OAuth 2.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>gRPC</td>
+                                                <td>Internal microservices communication</td>
+                                                <td>mTLS</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <h3>7.3 Security Implementation</h3>
+                            <div class="security-features mb-4">
+                                <ul>
+                                    <li><strong>End-to-End Encryption:</strong> AES-128 encryption for LoRaWAN communication</li>
+                                    <li><strong>API Security:</strong> OAuth 2.0 and JWT for API authentication</li>
+                                    <li><strong>Network Isolation:</strong> VLAN segregation for different network components</li>
+                                    <li><strong>Access Control:</strong> Role-based access control (RBAC) for system management</li>
+                                </ul>
+                            </div>
+
+                            <h3>7.4 Scalability and Redundancy</h3>
+                            <div class="scalability-features mb-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>Horizontal Scaling</h5>
+                                                <ul>
+                                                    <li>Container orchestration with Kubernetes</li>
+                                                    <li>Load balancing across multiple servers</li>
+                                                    <li>Automatic scaling based on load</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>High Availability</h5>
+                                                <ul>
+                                                    <li>Active-passive server configuration</li>
+                                                    <li>Automated failover mechanisms</li>
+                                                    <li>Data replication across zones</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="power-management" class="content-section">
@@ -2283,24 +2385,119 @@
         <section id="appendices" class="content-section">
             <div class="section-header">
                 <h2>16. Appendices</h2>
+                <p class="section-purpose">Supporting documentation, technical specifications, and reference materials for the LoRaWAN tracking system implementation.</p>
             </div>
-
             <div class="row">
-                <div class="col-md-4">
-                    <div class="key-highlights">
-                        <h3>Key Contents</h3>
-                        <ul>
-                            <li>Technical Specifications</li>
-                            <li>Coverage Maps</li>
-                            <li>Power Calculations</li>
-                            <li>Team Qualifications</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="col-12">
+                    <div class="appendix-section">
+                        <h3>Appendix A: Technical Specifications</h3>
+                        <div class="specs-details mb-4">
+                            <h4>A.1 LoRaWAN Device Specifications</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Parameter</th>
+                                            <th>Specification</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Frequency Band</td>
+                                            <td>AS923-1</td>
+                                            <td>Malaysia ISM band</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transmission Power</td>
+                                            <td>14 dBm</td>
+                                            <td>Configurable based on range</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Receiver Sensitivity</td>
+                                            <td>-140 dBm</td>
+                                            <td>At SF12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
-                <div class="col-md-8">
-                    <div class="detail-discussion">
-                        <div id="appendices-content"></div>
+                        <h3>Appendix B: Compliance Documentation</h3>
+                        <div class="compliance-docs mb-4">
+                            <ul>
+                                <li><strong>MCMC Certification:</strong> Malaysian Communications and Multimedia Commission approval for wireless devices</li>
+                                <li><strong>IP67 Certification:</strong> Environmental protection standards for outdoor equipment</li>
+                                <li><strong>Safety Standards:</strong> Compliance with Malaysian occupational safety requirements</li>
+                            </ul>
+                        </div>
+
+                        <h3>Appendix C: Maintenance Procedures</h3>
+                        <div class="maintenance-procedures mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>C.1 Routine Maintenance Schedule</h4>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Component</th>
+                                                <th>Frequency</th>
+                                                <th>Tasks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Solar Panels</td>
+                                                <td>Monthly</td>
+                                                <td>Clean panels, check mounting, verify output</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Batteries</td>
+                                                <td>Quarterly</td>
+                                                <td>Check voltage, clean terminals, verify charging</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gateway Hardware</td>
+                                                <td>Semi-annually</td>
+                                                <td>Firmware updates, physical inspection</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Appendix D: Troubleshooting Guide</h3>
+                        <div class="troubleshooting-guide mb-4">
+                            <div class="accordion" id="troubleshootingAccordion">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                            D.1 Common Issues and Solutions
+                                        </button>
+                                    </h4>
+                                    <div id="collapseOne" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><strong>Device Not Reporting:</strong> Check battery, verify network coverage, reset device</li>
+                                                <li><strong>Poor GPS Accuracy:</strong> Verify antenna placement, check for interference</li>
+                                                <li><strong>Gateway Offline:</strong> Check power supply, network connectivity, restart system</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Appendix E: Reference Documents</h3>
+                        <div class="reference-docs mb-4">
+                            <ul>
+                                <li>LoRaWAN Regional Parameters RP2-1.0.1</li>
+                                <li>ChirpStack Network Server Documentation</li>
+                                <li>Malaysian Wireless Device Regulations</li>
+                                <li>Solar Power System Design Guidelines</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
